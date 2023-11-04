@@ -1,27 +1,53 @@
-# command-line-arguments-to-count-word
+# Command-line-arguments-to-count-word
 ## AIM:
 To write a python program for getting the word count from the contents of a file using command line arguments.
-## EQUIPEMENT'S REQUIRED: 
-PC
-Anaconda - Python 3.7
-## ALGORITHM: 
+
+## EQUIPEMENT'S REQUIRED:
+PC Anaconda - Python 3.7
+
+## ALGORITHM:
 ### Step 1:
+Import sys package
 
-### Step 2: 
- 
-### Step 3: 
+### Step 2:
+Create an empty dictionary
 
-### Step 4:  
+### Step 3:
+Open the text file in read mode
 
-### Step 5: 
+### Step 4:
+Split words in each line and store in list
 
-### Step 6: 
+### Step 5:
+Count the number of occurence of each word in the list
+
+### Step 6:
+Count the number of occurence of each word in the list
 
 ## PROGRAM:
+Developed by : SUBALAKSHMI.S
 
-### OUTPUT:
+Register Number : 212222100051
+```py
+import sys
+fp = open(sys.argv[1],"r")
+d={}
+for i in fp:
+    for w in i.split():
+        if w not in d.keys():
+            d[w] = 1
+        else:
+            d[w] += 1
+print(d)
+```
+## OUTPUT:
+
+![image](https://github.com/Subalakshmisuresh/command-line-arguments-to-count-word/assets/121957896/1587c9c5-543e-4485-9e49-f8fc9ecefbd3)
+
+![image](https://github.com/Subalakshmisuresh/command-line-arguments-to-count-word/assets/121957896/a5c0d453-09b7-4994-8cef-0d40f35be119)
 
 
 
 ## RESULT:
 Thus the program is written to find the word count from the contents of a file using command line arguments.
+
